@@ -368,6 +368,7 @@ if (hamburger && cola || fries === 3 && nuggets) {
 } false */
 
 
+
 /* lesson 22 Циклы */
 
 
@@ -432,6 +433,56 @@ console.log(result); */
         }
     }
 } */
+
+
+/* HOMEWORK */
+
+
+/* let i = 2;
+do {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+    i++;
+} while (i <= 16); */
+
+/* let arrayOfNumbers = [];
+
+for (let i = 5; i <= 10; i++) {
+    arrayOfNumbers.push(i);
+} 
+
+console.log(arrayOfNumbers); */
+
+/* const arr = [3, 5, 8, 16, 20, 23, 50];
+const result = [];
+
+for (let i = 0; i < arr.length; i++) {
+    result[i] = arr[i];  
+}
+
+console.log(result); */
+
+/* const data = [5, 10, 'Shopping', 20, 'Homework']; 
+
+for (let i = 0; i < data.length; i++) {
+    if (typeof(data[i]) == typeof(0)) {
+        data[i] = data[i] * 2;
+    } else {
+        data[i] = data[i] + '- done';
+    }
+}
+
+console.log(data); */
+
+/* const data = [5, 10, 'Shopping', 20, 'Homework'];
+const result = [];
+
+for (let i = 0; i < data.length; i++) {
+    result[i] = data[(data.length - 1) - i];
+}
+
+console.log(result); */
 
 const lines = 5;
 let result = '';
