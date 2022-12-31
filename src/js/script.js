@@ -503,6 +503,105 @@ for (let i = 0; i <= lines; i++) {
 console.log(result); */
 
 
-/* lesson 22 Функции, стрелочные ф-ции (ES6) */
+/* lesson 25 Функции, стрелочные ф-ции (ES6) */
+
+
+/* function showFirstMessage() {
+    console.log('Hello, world!');
+}
+
+showFirstMessage();
+
+let num = 20;
+
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 10;
+
+}
+
+showFirstMessage('Hello, world!');
+console.log(num);
+
+function calc(a, b) {
+    return(a + b);
+}
+
+console.log(calc(4, 2));
+console.log(calc(3, 12));
+console.log(calc(7, 20));
+
+function ret() {
+    let num = 50;
+    return num;
+}
+
+const anotherNum = ret ();
+console.log(anotherNum);
+
+const logger = function() {
+    console.log('Hello');
+};
+
+logger();
+
+const calc = (a, b) => a + b;
+
+const calc = a => {return a};
+
+const calc = (a, b) => {
+    console.log(1);
+    return (a + b);
+}; */
+
+
+/* lesson 26 (д) Еще раз про аргументы функций */
+
+
+/* const usdCurr = 28;
+const eurCurr = 32;
+
+function convert(amount, curr) {
+    console.log(curr * amount);
+}
+
+convert(500, usdCurr);
+convert(500, eurCurr); */
+
+
+/* lesson 27 (д) Про важность return */
+
+
+/* const usdCurr = 28;
+const discount = 0.9;
+
+function convert(amount, curr) {
+    return curr * amount;
+}
+
+function promotion(result) {
+    console.log(result * discount);
+}
+
+const res = convert(500, usdCurr);
+promotion(res);
+
+promotion(convert(500, usdCurr));
+
+function test() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+        if (i === 3) return
+    }
+    console.log('Done');
+}
+
+test();
+
+function doNothing() {}
+console.log(doNothing() === undefined); */
+
+
+/* HOMEWORK */
 
 
