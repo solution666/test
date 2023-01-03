@@ -643,11 +643,11 @@ getMathResult(20, -5); */
                     /* lesson 28 Методы и свойства строк и чисел */
 
 
-const str = "teSt";
+/* const str = "teSt";
 const arr = [1, 2, 3, 4];
 
 console.log(arr.length);
-console.log(str.toUpperCase()); /* console.log(str[2] = 'd');  не работает*/
+console.log(str.toUpperCase()); console.log(str[2] = 'd');  не работает
 console.log(str.toLowerCase());
 
 const fruit = "Some fruits";
@@ -665,4 +665,15 @@ console.log(Math.round(num));
 
 const test = '12.2px';
 console.log(parseInt(test));
-console.log(parseFloat(test));
+console.log(parseFloat(test)); */
+
+
+                    /* HOMEWORK */
+
+
+
+                    
+
+                    /* lesson 30 Callback- функции */
+
+
