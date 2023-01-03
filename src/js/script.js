@@ -1,6 +1,6 @@
 'use strict';
 
-/* lesson 9 Переменные и строгий режим */
+                    /* lesson 9 Переменные и строгий режим */
 
 
 /* a = 15;
@@ -32,7 +32,7 @@ var name = 'Ivan';
 console.log(result) */
 
 
-/* lesson 11 Классификация типов данных в JavaScript */
+                    /* lesson 11 Классификация типов данных в JavaScript */
 
 /* let number = 4.6;
 
@@ -72,7 +72,7 @@ const obj = {
 }; */
 
 
-/* lesson 12 (д) Разница между объектами и массивами и неочевидные синтаксические возможности */
+                    /* lesson 12 (д) Разница между объектами и массивами и неочевидные синтаксические возможности */
 
 
 /* const arr = ['a', 'b', 'c'];
@@ -108,7 +108,7 @@ console.log(arrObj.c);
 console.log(arrObj.a);
 console.log(arrObj[2]); */
 
-/* lesson 13 Простое общение с пользователем */
+                    /* lesson 13 Простое общение с пользователем */
 
 /* alert('Hello');
 
@@ -132,7 +132,7 @@ document.write(answers);
 console.log(typeof(answers)); */
 
 
-/* lesson 14  Интерполяция (ES6) */
+                    /* lesson 14  Интерполяция (ES6) */
 
 
 /* const category = 'toys';
@@ -145,7 +145,7 @@ const user = 'Nazar';
 console.log(`Hello ${user}`); */
 
 
-/* lesson 15 операторы в JS*/
+                    /* lesson 15 операторы в JS*/
 
 
 /* console.log('arr' + " - object");
@@ -194,7 +194,7 @@ console.log(2+2*2 !== '6');
  */
 
 
-/* lesson 20 Условия */
+                    /* lesson 20 Условия */
 
 
 /* if (4 == 4) {
@@ -246,7 +246,7 @@ switch (num) {
 } */
 
 
-/* lesson 21 (д) Логические операторы */
+                    /* lesson 21 (д) Логические операторы */
 
 
 /* && */
@@ -321,7 +321,7 @@ console.log(johnRport || alexReport || samReport || mariaReport); */
 /* console.log(!0); false(это не false) > true(это true) */
 
 
-/* HOMEWORK */
+                    /* HOMEWORK */
 
 
 /* console.log( NaN || 2 || undefined );   2 
@@ -369,7 +369,7 @@ if (hamburger && cola || fries === 3 && nuggets) {
 
 
 
-/* lesson 22 Циклы */
+                    /* lesson 22 Циклы */
 
 
 /* let num = 50;
@@ -399,7 +399,7 @@ if (hamburger && cola || fries === 3 && nuggets) {
  } */
 
 
- /* lesson 23 Циклы в цикле и метки */
+                    /* lesson 23 Циклы в цикле и метки */
 
 
 /* for (let i = 0; i <3;  i++) {
@@ -435,7 +435,7 @@ console.log(result); */
 } */
 
 
-/* HOMEWORK */
+                    /* HOMEWORK */
 
 
 /* let i = 2;
@@ -503,7 +503,7 @@ for (let i = 0; i <= lines; i++) {
 console.log(result); */
 
 
-/* lesson 25 Функции, стрелочные ф-ции (ES6) */
+                    /* lesson 25 Функции, стрелочные ф-ции (ES6) */
 
 
 /* function showFirstMessage() {
@@ -555,7 +555,7 @@ const calc = (a, b) => {
 }; */
 
 
-/* lesson 26 (д) Еще раз про аргументы функций */
+                    /* lesson 26 (д) Еще раз про аргументы функций */
 
 
 /* const usdCurr = 28;
@@ -569,7 +569,7 @@ convert(500, usdCurr);
 convert(500, eurCurr); */
 
 
-/* lesson 27 (д) Про важность return */
+                    /* lesson 27 (д) Про важность return */
 
 
 /* const usdCurr = 28;
@@ -602,6 +602,67 @@ function doNothing() {}
 console.log(doNothing() === undefined); */
 
 
-/* HOMEWORK */
+                    /* HOMEWORK */
 
 
+/* function returnNeighboringNumbers(num) {
+    let a = num - 1;
+    let b = num + 1;
+    let arr = [a, num, b];
+    return console.log(arr);
+}
+
+returnNeighboringNumbers(235); */
+
+/* function getMathResult(num, times) {
+    if (times <= 0 || typeof(times) !== 'number') {
+        return num;
+    }
+
+    let str = '';
+
+    for (let i = 1; i <= times; i++) {
+        if (i === times) {
+            str += `${num * i}`;
+        } else {
+            str += `${num * i}---`;
+        }
+    }
+
+    return str;
+}
+
+getMathResult(5, 3);
+getMathResult(3, 10);
+getMathResult(10, 5);
+getMathResult(10, '5');
+getMathResult(10, 0);
+getMathResult(20, -5); */
+
+
+                    /* lesson 28 Методы и свойства строк и чисел */
+
+
+const str = "teSt";
+const arr = [1, 2, 3, 4];
+
+console.log(arr.length);
+console.log(str.toUpperCase()); /* console.log(str[2] = 'd');  не работает*/
+console.log(str.toLowerCase());
+
+const fruit = "Some fruits";
+
+console.log(fruit.indexOf('fruit'));
+
+const logg = 'Hello, world!';
+
+console.log(logg.slice(7, 12));
+console.log(logg.substring(7, 12));
+console.log(logg.substr(7, 5));
+
+const num = 12.2;
+console.log(Math.round(num));
+
+const test = '12.2px';
+console.log(parseInt(test));
+console.log(parseFloat(test));
