@@ -671,7 +671,83 @@ console.log(parseFloat(test)); */
                     /* HOMEWORK */
 
 
+/* function calculateVolumeAndArea(num) {
+    if ((num < 1) || (num !== parseInt(num))) {
 
+        return ("При вычислении произошла ошибка");
+    } else {
+        let volume = num*num*num;
+        let lateral = 4*(num*num);
+        let base = num*num;
+        let space = lateral + 2 * base;
+
+        return `'Объем куба: ${volume}, площадь всей поверхности: ${space}'`;
+    }
+}
+
+console.log(calculateVolumeAndArea(1)); */
+
+
+/* function getCoupeNumber(num) {
+    if (num === 0 || num > 36) {
+        return console.log("Таких мест в вагоне не существует");
+    } else if (isNaN(num) || num !== parseInt(num) || num < 0) {
+        return console.log("Ошибка. Проверьте правильность введенного номера места");
+    } else {
+    let result = Math.round((num + 1) / 4);
+    return result;
+    }
+}
+
+console.log(getCoupeNumber(8));
+console.log(getCoupeNumber(33));
+console.log(getCoupeNumber(7));
+console.log(getCoupeNumber(300));
+console.log(getCoupeNumber(0));
+console.log(getCoupeNumber(7.7));
+console.log(getCoupeNumber(-10));
+console.log(getCoupeNumber('Hello')); */
+
+
+/* function getTimeFromMinutes(num) {
+    if (isNaN(num) || num !== parseInt(num) || num < 0) {
+        return ("Ошибка, проверьте данные");
+    } else {
+        let minutes = num % 60;
+        let hours = (num - minutes) / 60;
+        if (hours === 1) {
+            return (`Это ${hours} час и ${minutes} минут`);
+        } else if (hours === 2 || hours === 3 || hours === 4) {
+            return (`Это ${hours} часa и ${minutes} минут`);
+        } else {
+            return (`Это ${hours} часов и ${minutes} минут`);
+        } 
+    }
+}
+
+console.log(getTimeFromMinutes(5000));
+console.log(getTimeFromMinutes(180));
+console.log(getTimeFromMinutes(150));
+console.log(getTimeFromMinutes(60));
+console.log(getTimeFromMinutes(50));
+console.log(getTimeFromMinutes(4));
+console.log(getTimeFromMinutes(0));
+console.log(getTimeFromMinutes(-150)); */
+
+
+/* function findMaxNumber(firstNum, secondNum, thirdNum, fourthNum) {
+    if (isNaN(firstNum) || isNaN(secondNum) || isNaN(thirdNum) || isNaN(fourthNum) || 
+    firstNum !== parseFloat(firstNum) || secondNum !== parseFloat(secondNum) || 
+    thirdNum !== parseFloat(thirdNum) || fourthNum !== parseFloat(fourthNum)) {
+        return 0;
+    } else {
+        return Math.max(firstNum, secondNum, thirdNum, fourthNum);  
+    }
+}
+
+console.log(findMaxNumber(4, 3, 2, 1));
+console.log(findMaxNumber(1, 5, 6.6, 11));
+console.log(findMaxNumber(1, 5, '6', '10')); */
                     
 
                     /* lesson 30 Callback- функции */
