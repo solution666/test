@@ -748,8 +748,45 @@ console.log(getTimeFromMinutes(-150)); */
 console.log(findMaxNumber(4, 3, 2, 1));
 console.log(findMaxNumber(1, 5, 6.6, 11));
 console.log(findMaxNumber(1, 5, '6', '10')); */
+
+
+/* function fib(num) {
+    if (num <= 0 || !Number.isInteger(num) || typeof(num) !== 'number') {
+    return ""; 
+    }
+
+    let result = "";
+    let firstNum = 0;
+    let secondNum = 1;
+            
+    for (let i = 0; i < num; i++) {
+        if(i+1 === num) {
+            result += `${firstNum}`;
+        } else {
+            result += `${firstNum} `;
+        }
+
+        let thirdNum = firstNum + secondNum;
+        firstNum = secondNum;
+        secondNum = thirdNum;
+    }
+
+    return result;
+}
+
+console.log(fib(4));
+console.log(fib(7));
+console.log(fib('7'));
+console.log(fib(1));
+console.log(fib(0)); */
+
+
+                    /* lesson 30 (д) Метод trim() */
+
+
+
                     
 
-                    /* lesson 30 Callback- функции */
+                    /* lesson 31 Callback- функции */
 
 
