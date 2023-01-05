@@ -779,14 +779,242 @@ console.log(fib(7));
 console.log(fib('7'));
 console.log(fib(1));
 console.log(fib(0)); */
-
-
-                    /* lesson 30 (д) Метод trim() */
-
-
-
                     
 
                     /* lesson 31 Callback- функции */
+
+
+/* function first() {
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
+
+function learnJS(lang, callback) {
+    console.log(`I'm learning: ${lang}`);
+    callback();
+}
+
+function done() {
+    console.log('I complet this lesson!');
+}
+
+learnJS('JavaScript', done);
+
+learnJS('JavaScript', function() {
+    console.log('I complet this lesson!');
+}); */
+
+
+                    /* lesson 32 Объекты, деструктуризация объектов (ES6) */
+
+
+/* const obj = new Object();
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log('Test');
+    }
+};
+
+options.makeTest();
+
+const {border, bg} = options.colors;
+console.log(border);
+
+console.log(Object.keys(options).length);
+
+console.log(options.name);
+console.log(options['colors']['border']);
+
+delete options.name;
+
+console.log(options);
+
+let counter = 0;
+for (let key in options) {
+    if (typeof(options[key]) === 'object') {
+        for (let i in options[key]) {
+            console.log(`Свойства ${i}, имеет значение ${options[key][i]}`);
+            counter++;
+        }
+    } else {
+        console.log(`Свойства ${key}, имеет значение ${options[key]}`);
+        counter++;
+    } 
+} */
+
+
+                    /* HOMEWORK */
+
+                
+/* const personalPlanPeter = {
+    name: "Peter",
+    age: "29",
+    skills: {
+        languages: ['ru', 'eng'],
+        programmingLangs: {
+            js: '20%',
+            php: '10%'
+        },
+        exp: '1 month'
+    },
+    showAgeAndLangs: function(plan) {
+        const {languages} = plan.skills;
+        let str = `Мне ${plan.age} и я владею языками: `;
+
+        languages.forEach(function(lang) {
+            str += `${lang.toUpperCase()} `;
+        });
+
+        return str;
+    }
+};
+
+console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
+
+function showExperience(plan) {
+    const {exp} = plan.skills;
+    return exp;
+}
+
+console.log(showExperience(personalPlanPeter));
+
+function showProgrammingLangs(plan) {
+    const {programmingLangs} = plan.skills;
+    let str = '';
+    for (let key in programmingLangs) {
+        str += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
+    }
+    
+    return str;
+}
+
+console.log(showProgrammingLangs(personalPlanPeter)); */
+
+
+                    /* lesson 33 Массивы и псевдомассивы */
+                
+
+/* const arr = [1, 2, 13, 36, 8];
+arr.sort(compareNum);
+console.log(arr);
+
+function compareNum(a, b) {
+    return a - b;
+}
+
+arr[99] = 0;
+console.log(arr.length);
+console.log(arr);
+
+arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} inside tje massive ${arr}`);
+});
+
+arr.pop();
+arr.push(10);
+
+console.log(arr);
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+for (let value of arr) {
+    console.log(value);
+}
+
+const str = prompt("", "");
+const products = str.split(", ");
+products.sort();
+console.log(products. join('; ')); */
+
+
+                    /* HOMEWORK */
+
+
+/* const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+function showFamily(arr) {
+    let str = "Семья состоит из:";
+    if (family.length === 0) {
+        return "Семья пуста";
+    } else {
+        for (let value of arr) {
+            str += ` ${value}`;
+        }
+        return str;
+    }
+}
+
+console.log(showFamily(family)); */
+
+/* const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+function standardizeStrings(arr) {
+    for (let i = 0; i < favoriteCities.length; i++) {
+        console.log(favoriteCities[i].toLowerCase());
+    }
+}
+
+standardizeStrings(favoriteCities); */
+
+
+                    /* HOMEWORK (part 2)*/
+
+
+/* const someString = 'This is some strange string';
+
+function reverse(str) {
+    if (typeof(str) !== 'string') {
+        return "Ошибка!";
+    } else {
+        let arr = [];
+        for (let i = 0; i < str.length; i++) {
+            arr[i] = str[i];
+        }
+        
+        arr.reverse();
+        return arr.join('');
+    }
+}
+
+console.log(reverse(someString)); */
+
+/* const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+function availableCurr(arr, missingCurr) {
+    let str = "Доступные валюты:\n";
+    arr.length === 0 ? str = "Нет доступных валют" : str = 'Доступные валюты:\n';
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== missingCurr) {
+            str += `${arr[i]}\n`;
+        }
+    }
+
+    return str;
+}
+
+console.log(availableCurr(['UAH', 'RUB', 'CNY'], 'RUB')); */
+
+
+                    /* lesson 35 Передача по ссылке или по значению, Spread оператор (ES6-ES9) */
 
 
