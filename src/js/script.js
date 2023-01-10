@@ -942,7 +942,7 @@ for (let value of arr) {
 const str = prompt("", "");
 const products = str.split(", ");
 products.sort();
-console.log(products. join('; ')); */
+console.log(products.join('; ')); */
 
 
                     /* HOMEWORK */
@@ -1158,7 +1158,7 @@ john.sayHello(); */
                     /* HOMEWORK */
 
 
-const shoppingMallData = {
+/* const shoppingMallData = {
     shops: [
         {
             width: 10,
@@ -1183,12 +1183,108 @@ const shoppingMallData = {
 };
 
 function isBudgetEnough(data) {
+    let squaer = 0;
+    let volume = 0;
 
+    data.shops.forEach(shop => {
+        squaer += shop.width * shop.length;
+    });
+
+    volume += squaer * data.height;
+
+    if (data.budget - (volume*data.moneyPer1m3) >= 0) {
+        return `Бюджета достаточно`;
+    } else {
+        return `Бюджета недостаточно`;
+    }
 }
 
-console.log(isBudgetEnough(shoppingMallData));
+console.log(isBudgetEnough(shoppingMallData)); */
+
+/* const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+function sortStudentsByGroups(arr) {
+    arr.sort();
+    let a = [], b = [], c = [], rest = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (i < 3) {
+            a.push(arr[i]);
+        } else if (i < 6) {
+            b.push(arr[i]);
+        } else if (i < 9) {
+            c.push(arr[i]);
+        } else {
+            rest.push(arr[i]);
+        }
+    }
+
+    return [a, b, c, `Оставшиеся студенты: ${rest.length === 0 ? '-' : rest.join(', ')}`];
+}
+
+console.log(sortStudentsByGroups(students)); */
 
 
                     /* lesson 39 Динамическая типизация в JS */
 
 
+/* // To String
+
+// 1)
+console.log(typeof(String(null)));
+console.log(String(null));
+console.log(typeof(String(4)));
+
+// 2)
+console.log(typeof(5 + ''));
+console.log(typeof(null + ''));
+
+const num = 5;
+
+console.log("https://vk.com/catalog" + num);
+
+const fontSize = 26 + 'px';
+
+// To Number
+
+// 1)
+console.log(typeof(Number('4')));
+
+// 2)
+console.log(typeof(+'5'));
+
+// 3)
+console.log(typeof(parseInt('15px', 10)));
+
+let answer = +prompt("Hello", "");
+
+// To Boolean
+
+// 0, '', null, undefined, NaN === false;
+
+// 1)
+let switcher = null;
+
+if (switcher) {
+    console.log('Working...');
+}
+
+switcher = 1;
+
+if (switcher) {
+    console.log('Working...');
+}
+
+// 2)
+
+console.log(typeof(Boolean('4')));
+
+// 3)
+
+console.log(typeof(!!"10101")); */
+
+
+                    /* lesson 40 Замыкание и лексическое окружение */
+
+
+let phrase = `Don't worry!`;
