@@ -1287,4 +1287,131 @@ console.log(typeof(!!"10101")); */
                     /* lesson 40 Замыкание и лексическое окружение */
 
 
-let phrase = `Don't worry!`;
+/* let number = 5; // *
+
+function logNumber() {
+    let number = 4; // ***
+    console.log(number);
+}
+
+number = 6; // **
+
+logNumber(); // 5 => 6 => 4
+
+function createCounter() {
+    let counter = 0;
+
+    const myFunction = function() {
+        counter = counter + 1;
+        return counter;
+    };
+
+    return myFunction;
+}
+
+const increment = createCounter();
+const c1 = increment();
+const c2 = increment();
+const c3 = increment();
+
+console.log(c1, c2, c3); // 1 2 3 
+
+{
+    let msg = 'Hello';
+}
+
+console.log(msg) // Error
+
+for (let i = 0; i < 9; i++) {
+    for (let j = 0; j < 9; j++) {
+        let num = 3;
+    }
+
+    console.log(num) // Error
+} */
+
+
+                    /* lesson 41 Задачи с собеседований на понимание основ */
+
+
+/* let x = 5; alert( x++ ); // 5
+
+[ ] + false - null + true; // => NaN;  [] === ""; typeof([] + false) === string;
+
+let y = 1; let x = y = 2; alert(x); // 2
+
+[ ] + 1 + 2; // "12"
+
+alert( "1"[0] ); // 1
+
+2 && 1 && null && 0 && undefined; // null (AND(&&) запинается на лжи)
+
+!!( a && b ) === (a && b); // false
+
+alert( null || 2 && 3 || 4 ); // 3 (OR(||) запинается на правде)
+
+a = [1, 2, 3]; b = [1, 2, 3]; // Правда ли что a == b ? Нет. false
+
+alert( +"Infinity" ); // Infinity
+
+"Ёжик" > "яблоко"; // Верно ли сравнение? Нет. false
+
+0 || "" || 2 || undefined || true || falsе; // 2 */
+
+
+                    /* HOMEWORK */
+
+
+/* const restorantData = {
+    menu: [
+        {
+            name: 'Salad Caesar',
+            price: '14$'
+        },
+        {
+            name: 'Pizza Diavola',
+            price: '9$'
+        },
+        {
+            name: 'Beefsteak',
+            price: '17$'
+        },
+        {
+            name: 'Napoleon',
+            price: '7$'
+        }
+    ],
+    waitors: [
+        {name: 'Alice', age: 22}, {name: 'John', age: 24}
+    ],
+    averageLunchPrice: '20$',
+    openNow: true
+};
+
+function isOpen(prop) {
+    let answer = '';
+    prop ? answer = 'Открыто' : answer = 'Закрыто';
+
+    return answer;
+}
+
+console.log(isOpen(restorantData.openNow));
+
+function isAverageLunchPriceTrue(fDish, sDish, average) {
+    if (+fDish.price.slice(0, -1) + (+sDish.price.slice(0, -1)) < +average.slice(0, -1)) {
+        return 'Цена ниже средней';
+    } else {
+        return 'Цена выше средней';
+    }
+}
+
+console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
+
+function transferWaitors(data) {
+    const copy = Object.assign({}, data);
+
+    copy.waitors = [{name: 'Mike', age: 32}];
+    return copy;
+}
+
+transferWaitors(restorantData); */
