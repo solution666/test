@@ -1449,7 +1449,7 @@ console.log(oneHeart); */
                     /* lesson 42 Получение элементов со страницы */
 
 
-let num = 500;
+/* let num = 500;
 const box = document.getElementById('box'),
       btns = document.getElementsByTagName('button'),
       circles = document.getElementsByClassName('circle'),
@@ -1502,4 +1502,4 @@ div.textContent = 'Hello';
 div.insertAdjacentHTML('afterbegin', "<h2>Hello1</h2>");
 div.insertAdjacentHTML('afterend', "<h2>Hello2</h2>");
 div.insertAdjacentHTML('beforebegin', "<h2>Hello3</h2>");
-div.insertAdjacentHTML('beforeend', "<h2>Hello4</h2>");
+div.insertAdjacentHTML('beforeend', "<h2>Hello4</h2>"); */
