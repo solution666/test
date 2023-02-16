@@ -1617,4 +1617,21 @@ const result = getTotalProgressByRecursion(students);
 console.log(result[0]/result[1]); */
 
 
+                    /* HOMEWORK */
+
+
+/* function factorial(n) {
+    if (n !== parseInt(n) || n != 'string' || n === '') {
+    } else if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+console.log(factorial(0)); */
+
+
                     /* События на мобильных устройствах */
+
+
